@@ -1,0 +1,24 @@
+Installing Module
+	*CPAN -> http://search.cpan.org
+	*perldoc perlmodinstall.pod
+		1) Download and unpack moduel
+		2) Run perl Makefile.PL to create a Makefile
+		3) Run make to build package
+		4) Run make test to run test suites
+		5) Run make install to install 
+			OR
+		cpan > install modulename
+		cpanp > i modulename
+
+Filesystem
+
+#File::Spec -> Hides differences between file systems 
+	cudir = current directory
+	updir = up one directory tree level
+	
+	File::Spec:Functions -> same thing, easier syntax
+#Path::Class -> imported module, even easier syntax.  Good for OS indepe						ndent code  
+
+**basically for file system code, you need to write a scan directory routine of some kind and then call it recursively for various conditions
+
+**Even further everything in Unix is a file written in text.  Use regexps to search them intelligenetly.
